@@ -30,8 +30,8 @@ public class LeanFtTest extends UnitTestClassBase {
        browser = BrowserFactory.launch(BrowserType.CHROME);
        browser.clearCache();
         //Launch browser remotely on SRF
-//        BrowserDescription bd = new BrowserDescription();
-//
+        BrowserDescription bd = new BrowserDescription();
+
 //        bd.setType(BrowserType.CHROME); //or: bd.set("type", BrowserType.INTERNET_EXPLORER) or: bd.set("type", "FIREFOX")
 //
 //        bd.set("version", "66");
@@ -41,17 +41,17 @@ public class LeanFtTest extends UnitTestClassBase {
 //        bd.set("osVersion", "10");
 //
 //        bd.set("testName", "Live from IntelliJ!");
-//
-//        bd.set("tunnelName", "Jeff Kingston Demo");
-//
+
+//        bd.set("tunnelName", "Andrew_Tunnel");
+
 //        browser = SrfLab.launchBrowser(bd);
 
         //Use Nimbus AOS
-       browser.navigate("http://nimbusserver.aos.com:8000");
+//       browser.navigate("http://nimbusserver.aos.com:8000");
 
         //Use Public AOS
-        //browser.navigate("http://www.advantageonlineshopping.com");
-        //sleep(10000,0);
+        browser.navigate("http://www.advantageonlineshopping.com");
+//        sleep(10000,0);
     }
 
     @AfterClass
@@ -63,7 +63,7 @@ public class LeanFtTest extends UnitTestClassBase {
         browser.close();
 
         //Close SRF Browser
-        //SrfLab.releaseEnvironment(browser);
+//        SrfLab.releaseEnvironment(browser);
 
         globalTearDown();
 
