@@ -83,7 +83,7 @@ public class LeanFtTest extends UnitTestClassBase {
         // Tablets
 
         browser.describe(WebElement.class, new WebElementDescription.Builder()
-                .tagName("SPAN").innerText("TABLET").build()).click();
+                .tagName("SPAN").innerText("TABLETS").build()).click();
 
         browser.describe(WebElement.class, new WebElementDescription.Builder()
                 .tagName("LI").innerText("SOLD OUT SHOP NOW HP ElitePad 1000 G2 Tablet $1,009.00 ").build()).click();
